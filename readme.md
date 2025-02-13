@@ -1,6 +1,6 @@
 ![Banner](readme/banner.png)
 
-# Olivas.Digital - Guia de configuração e execução do projeto
+# Olivas.Digital - Guia de configuração
 
 Este guia fornece um passo a passo detalhado para configurar e executar um projeto WordPress que utiliza Gulp para automação de tarefas, incluindo compilação de SCSS, minificação de arquivos CSS e JavaScript, e recarregamento automático com BrowserSync.
 
