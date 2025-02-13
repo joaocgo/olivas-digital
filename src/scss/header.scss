@@ -1,0 +1,110 @@
+header {
+  height: $header-height;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: $white;
+  border-radius: 0 0 16px 16px;
+  @media (max-width: 991px) {
+    height: $header-height-mobile;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    ul {
+      display: flex;
+      gap: 24px;
+      a {
+        font-size: .9rem;
+        font-family: $font-secondary;
+        position: relative;
+        padding: 8px 0;
+        &:before {
+          content: '';
+          position: absolute;
+          bottom: 0px;
+          left: 0;
+          width: 0;
+          height: 1px;
+          background: $black;
+          transition: ease-in-out 250ms;
+        }
+        &:hover {
+          &:before {
+            left: inherit;
+            width: 100%;
+            right: 0;
+          }
+        }
+      }
+      li.current_page_item a {
+        &:before {
+          left: inherit;
+          width: 100%;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  .button-desktop {
+    a {
+      font-size: .9rem;
+      height: 54px;
+      padding: 0 4rem;
+      background-color: $black;
+      color: $white;
+    }
+  }
+
+  .button-mobile {
+    button {
+      display: flex;
+      border: none;
+      align-items: center;
+      justify-content: center;
+      font-family: $font-secondary;
+      gap: 12px;
+      padding: 8px;
+    }
+  }
+
+  .nav-overlay {
+    position: absolute;
+    top: $header-height-mobile;
+    margin-top: 16px;
+    left: 16px;
+    background-color: $white;
+    width: calc(100% - 32px);
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 0 10px #0000001a;
+    z-index: 998;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      a {
+        font-family: $font-secondary;
+        padding: 12px 0;
+        font-size: 0.875rem;
+      }
+    }
+    .button-cta {
+      margin-top: 1.5rem;
+      display: flex;
+      width: 100%;
+      max-width: 100%;
+      height: 56px;
+      font-size: 0.875rem;
+      background-color: $black;
+      color: $white;
+    }
+  }
+}

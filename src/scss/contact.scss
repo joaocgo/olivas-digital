@@ -1,0 +1,40 @@
+#contact.home {
+  padding-top: 0;
+  .title {
+    font-size: 2.75rem;
+    line-height: 140%;
+    @media (max-width: 991px) {
+      font-size: 2rem;
+      line-height: 100%;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .heading-text {
+    font-size: .9rem;
+    opacity: .65;
+    @media (max-width: 991px) {
+      text-align: center;
+      max-width: 660px;
+      margin: 0 auto;
+    }
+  }
+
+  form {
+    margin-top: 5rem;
+    padding: 4rem 3rem;
+    background-color: $white;
+    border-radius: 24px;
+    box-shadow: 0 0 15px 2px #0000001a;
+    @media (max-width: 991px) {
+      margin-top: 3rem;
+    }
+    @media (max-width: 767px) {
+      padding: 3rem 2rem;
+    }
+    @media (max-width: 576px) {
+      padding: 2rem;
+    }
+  }
+}

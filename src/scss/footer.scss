@@ -1,0 +1,51 @@
+footer {
+  padding-bottom: 1rem;
+  color: $white;
+  font-family: $font-secondary;
+  position: relative;
+  z-index: 1;
+
+  .card-footer {
+    background-color: $black;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    border-radius: 24px;
+    @media (max-width: 576px) {
+      padding: 2rem;
+    }
+  }
+
+  span {
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .footer-letter-animate {
+    margin: 3rem 0;
+    @media (max-width: 576px) {
+      margin: 1.5rem 0;
+      margin-top: 0;
+    }
+    .carrossel-ativo {
+      animation: carrossel-left 20s linear infinite;
+      display: flex;
+      gap: 1rem;
+      @media (max-width: 576px) {
+        animation: carrossel-left 5s linear infinite;
+      }
+      span {
+        font-family: $font-secondary;
+        font-size: 5rem;
+        @media (max-width: 991px) {
+          font-size: 3rem;
+        }
+        @media (max-width: 576px) {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

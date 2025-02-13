@@ -1,0 +1,111 @@
+:root {
+  --primary: #000000;
+  --secondary: #c6b92c;
+  --primary-dark: #000000;
+}
+
+/* Fundo principal */
+body.wp-admin {
+  background-color: #EBEDF1;
+  color: var(--primary);
+}
+
+#wpadminbar .menupop .ab-sub-wrapper, #wpadminbar .shortlink-input {
+  background: #222222;
+}
+
+#wpadminbar {
+  background: var(--primary-dark);
+}
+
+#wpadminbar .ab-top-menu>li.hover>.ab-item {
+  background: var(--secondary);
+  color: #EBEDF1;
+}
+
+/* Barras laterais */
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
+  background-color: var(--primary);
+  color: #EBEDF1;
+}
+
+/* Links do menu */
+#adminmenu a {
+  color: #EBEDF1;
+}
+
+#adminmenu .wp-submenu {
+  background-color: #222222;
+}
+
+/* Links do menu ao passar o mouse */
+#adminmenu a:hover, #adminmenu li.menu-top:hover, #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
+  background-color: var(--secondary);
+  color: #000000;
+}
+
+#adminmenu li.current a.menu-top {
+  background: var(--secondary);
+}
+
+#adminmenu li:hover #adminmenu .wp-menu-name,
+#adminmenu li.current .wp-menu-name {
+  color: #000000!important;
+}
+
+#adminmenu li:hover div.wp-menu-image:before {
+  color: #000000 !important;
+}
+
+#adminmenu .current div.wp-menu-image:before, #adminmenu .wp-has-current-submenu div.wp-menu-image:before, #adminmenu a.current:hover div.wp-menu-image:before, #adminmenu a.wp-has-current-submenu:hover div.wp-menu-image:before, #adminmenu li.wp-has-current-submenu a:focus div.wp-menu-image:before, #adminmenu li.wp-has-current-submenu.opensub div.wp-menu-image:before, #adminmenu li.wp-has-current-submenu:hover div.wp-menu-image:before {
+  color: #000000;
+}
+
+#adminmenu li.opensub>a.menu-top {
+  background-color: var(--secondary);
+  color: #000;
+}
+
+#adminmenu li.opensub div.wp-menu-image:before {
+  color: #000;
+}
+
+#collapse-button:hover {
+  color: var(--secondary);
+}
+
+/* Menu ativo */
+#adminmenu .wp-submenu a:focus, #adminmenu .wp-submenu a:hover, #adminmenu .wp-submenu .wp-submenu-head, #adminmenu .current a.menu-top {
+  background-color: var(--secondary);
+  color: #EBEDF1;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary);
+}
+
+/* Botões */
+.wp-core-ui .button-primary {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+  color: #000000;
+}
+
+.wp-core-ui .button-primary:hover {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+/* Barras de aviso */
+.notice-success {
+  background-color: #EBEDF1;
+  border-left-color: var(--secondary);
+  color: var(--primary);
+}
+
+.notice-error {
+  background-color: #FFD2D2;
+  border-left-color: #FF0000;
+  color: #900;
+}

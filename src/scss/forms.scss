@@ -1,0 +1,97 @@
+input, select, textarea {
+  display: flex;
+  align-items: center;
+  height: 52px;
+  width: 100%;
+  background-color: $gray-300;
+  border: none;
+  border-radius: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: solid 1px transparent;
+  transition: ease-in-out 250ms;
+  &:focus {
+    border-color: $black;
+  }
+}
+
+textarea {
+  padding-top: 16px;
+  height: 100%;
+  min-height: 145px;
+  max-height: 250px;
+  @media (max-width: 576px) {
+    max-height: 180px;
+  }
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  font-family: $font-secondary;
+  margin-bottom: 8px;
+}
+
+input[type="submit"] {
+  background-color: $black;
+  color: $white;
+  border-radius: 30px;
+  display: inline-flex;
+  width: auto;
+  font-family: $font-secondary;
+  padding: 0 32px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+}
+
+.wpcf7-spinner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 24px;
+  position: relative;
+  &.submit {
+    margin: 0;
+  }
+}
+
+form.invalid .wpcf7-response-output {
+  color: #ffe8e8;
+  background: #dc3232;
+}
+
+form.sent .wpcf7-response-output {
+  background: #e5ffe7;
+  color: #46b450;
+}
+
+.wpcf7-not-valid-tip {
+  color: #dc3232;
+  background: #ffe8e8;
+  padding: 5px 18px;
+  font-size: .8em;
+  font-weight: 500;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.wpcf7 form .wpcf7-response-output {
+  padding: 0;
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 100%;
+  font-size: .9em;
+  font-weight: 500;
+  border-radius: 8px;
+  text-align: center;
+  border: none;
+}

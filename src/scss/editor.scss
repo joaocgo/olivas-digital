@@ -1,0 +1,87 @@
+.editor {
+  padding: 3rem;
+  background-color: $white;
+  border-radius: 16px;
+  @media (max-width: 576px) {
+    padding: 1.25rem;
+  }
+}
+
+.editor,
+.editor * {
+  font-size: 1rem;
+  color: $black;
+  @media (max-width: 576px) {
+    font-size: .9rem;
+  }
+  strong {
+    color: $black;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 32px 0;
+    letter-spacing: -.5px;
+    font-family: $font-secondary;
+    color: $primary-500;
+    strong, b {
+      font-size: 2rem;
+      font-weight: 400;
+      @media (max-width: 576px) {
+        font-size: 1.125rem;
+        margin: 24px 0;
+      }
+    }
+    @media (max-width: 576px) {
+      font-size: 1.125rem;
+      margin: 24px 0;
+    }
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+    @media (max-width: 576px) {
+      font-size: .9rem;
+      line-height: 140%;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  ul {
+    margin-bottom: 16px;
+    text-align: left;
+    li {
+      display: block;
+      position: relative;
+      padding: 8px 0px 8px 32px;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 110%;
+      color: $black;
+      margin-bottom: 0;
+      @media (max-width: 576px) {
+        font-size: .9rem;
+        line-height: 140%;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        background-image: url('../../assets/icons/arrow2.svg');
+        background-size: contain;
+        top: 12px;
+        left: 0;
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 16px;
+      }
+    }
+    li:last-child {
+      border-bottom: none;
+    }
+    @media (max-width: 576px) {
+      font-size: .9rem;
+    }  
+  }
+}
